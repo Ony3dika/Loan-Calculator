@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator By AP</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="kon">
+
+            <div class="lamnt" id="try" style="background-color: rgb(248, 215, 218);border: 0.1px solid rgb(252, 198, 202);height: 50px;">
+                <p style="color: rgb(114, 28, 65);margin-left: 120px;margin-top: 15px;">Please Check Your Numbers</p>
+            </div>
+
+            <h1>Loan Calculator</h1>
+
+            <div class="lamnt">
+                <label for="" style="width: 8%;">$</label>
+                <input type="number" id="loan-amt" placeholder="Loan Amount" style="width: 92%;">
+            </div>
+
+            
+            <div class="lamnt">
+                <label for="">%</label>
+                <input type="number" id="int" placeholder="Interest">
+            </div>
+
+            
+            <div class="lamnt">
+                <input type="number" id="yeartp" placeholder="Years To Repay" style="width: 100%;border-radius: 5px;">
+            </div>
+
+            <button class="calc">Calculate</button>
+
+           <div class="loading">
+            <img src="./img/loading.gif" alt="" class="gif">
+           </div>
+
+           <div class="viz">
+                <h2>Results</h2>
+
+                <div class="lamnt">
+                    <label for="" style="width: 30%;" class="lad">Monthly Payment</label>
+                    <div class="mp lad"></div>
+                </div>
+
+                <div class="lamnt">
+                    <label for="" style="width: 25%;" class="lad">Total Payment</label>
+                    <div class="tp lad"></div>
+                </div>
+
+                <div class="lamnt">
+                    <label for="" style="width: 23%;" class="lad">Total Interest</label>
+                    <div class="ti lad"></div>
+                </div>
+           </div>
+        </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>
